@@ -7,16 +7,16 @@
 該腳本安裝的文件符合 [Filesystem Hierarchy Standard (FHS)](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)：
 
 ```
-installed: /usr/local/bin/v2ray
-installed: /usr/local/bin/v2ctl
-installed: /usr/local/share/v2ray/geoip.dat
-installed: /usr/local/share/v2ray/geosite.dat
-installed: /usr/local/etc/v2ray/config.json
-installed: /var/log/v2ray/
-installed: /var/log/v2ray/access.log
-installed: /var/log/v2ray/error.log
-installed: /etc/systemd/system/v2ray.service
-installed: /etc/systemd/system/v2ray@.service
+/usr/local/bin/v2ray：V2Ray 程序，用于启动和管理 V2Ray 服务。
+/usr/local/bin/v2ctl：V2Ray 控制台工具，用于管理 V2Ray 配置和日志。
+/usr/local/share/v2ray/geoip.dat：IP 数据文件，用于识别 IP 地址的区域。
+/usr/local/share/v2ray/geosite.dat：域名数据文件，用于识别域名的区域。
+/usr/local/etc/v2ray/config.json：配置文件，用于指定 V2Ray 的服务端配置。
+/var/log/v2ray/：日志目录，用于存储 V2Ray 的访问日志和错误日志。
+/var/log/v2ray/access.log：访问日志，用于记录 V2Ray 的流量访问记录。
+/var/log/v2ray/error.log：错误日志，用于记录 V2Ray 的运行错误信息。
+/etc/systemd/system/v2ray.service：Systemd 服务文件，用于启动 V2Ray 服务。
+/etc/systemd/system/v2ray@.service：Systemd 服务文件模板，用于启动 V2Ray 服务的多个实例。
 ```
 
 ## 重要提示
